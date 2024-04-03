@@ -8,7 +8,7 @@ const ProjectSection = () => {
     <div className="max-w-maxWidthLayout px-[10px] mx-auto my-[50px] lg:my-[150px]">
       <ButtonNavSection title="Project" />
       <div className="mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
-        <div className="relative grid grid-cols-1 grid-rows-3 gap-[50px] lg:gap-[100px]">
+        <div className="relative group hover:cursor-pointer hover ease-in grid grid-cols-1 grid-rows-3 gap-[50px] lg:gap-[100px]">
           {firstSixElements.map((el, index) => {
             return (
               <div className="flex flex-col gap-8" key={index}>
@@ -21,7 +21,7 @@ const ProjectSection = () => {
                   <p className="text-white md:text-xl">{el.subTitle}</p>
                   <p className="text-white md:text-xl opacity-70">{el.description}</p>
                 </div>
-                {/* <div className="absolute w-full h-full bg-[rgba(0,0,0,0.5)] left-0 top-0"></div> */}
+                {/* <div className="group-hover:hidden  absolute w-full h-full bg-[rgba(0,0,0,0.5)] left-0 top-0"></div> */}
               </div>
             );
           })}

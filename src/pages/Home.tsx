@@ -13,8 +13,9 @@ import { interGateElements } from "../contants";
 
 const Home = () => {
   const [displayCookieSection, setDisplayCookieSection] = useState(true);
-  const handleDisplayCookieSection = () => {
-    setDisplayCookieSection(false);
+  const handleDisplayCookieSection = (data:boolean) => {
+    console.log(data)
+    setDisplayCookieSection(data);
   };
   return (
     <div className="bg-black relative">
@@ -22,7 +23,7 @@ const Home = () => {
       <ProjectSection />
       <ContactSection />
       <ManifestoSection />
-      {interGateElements.map((el, _) => {
+      {interGateElements.map((el) => {
         return (
           <div className="px-[10px] py-[40px] lg:px-[20px] xl:px-[147px] lg:py-[54px]" key={el.number}>
             <IntergateSection
@@ -47,8 +48,8 @@ const Home = () => {
       </div>
       <Footer />
       {displayCookieSection && (
-        <div className="fixed max-w-[587px] z-1 bottom-[10px] left-1/2 transform -translate-x-1/2">
-          <CookieSection handleDisplaySection={handleDisplayCookieSection} />
+        <div className="fixed w-full xl:max-w-[587px] z-1 bottom-0 sm:bottom-[10px] xl:bottom-[10px] left-1/2 transform -translate-x-1/2">
+          <CookieSection handleDisplaySection={(data)=>handleDisplayCookieSection(data)} />
         </div>
       )}
     </div>

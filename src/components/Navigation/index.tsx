@@ -19,7 +19,7 @@ const Navigation = () => {
             <li>DE</li>
           </ul>
           <div className="flex justify-end cursor-default">
-            <ul className="flex flex-col items-end gap-4 group w-fit ">
+            <ul className="flex flex-col items-end gap-4 group w-fit sm:text-xl">
               <li className="flex items-center justify-center hover:cursor-pointer gap-1 ">
                 <Icon icon="mingcute:arrow-right-line" />
                 <span>Home</span>
