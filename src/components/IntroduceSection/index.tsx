@@ -6,7 +6,7 @@ const IntroduceSection = () => {
   return (
     <div className="">
       <span className="text-white">CEO & ART DIRECTOR</span>
-      <div className="flex flex-col xl:flex-grow">
+      <div className="flex flex-col lg:flex-grow xl:flex-grow">
         <div className="relative xl:w-1/2">
           <div className="flex justify-center">
             <img
