@@ -1,4 +1,3 @@
-import React from "react";
 import ButtonNavSection from "../ButtonNavSection";
 
 const OurTeamSection = () => {

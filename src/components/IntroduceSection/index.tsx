@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Thomas from "../../assets/images/Introduce/Thomas.png";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { useState } from "react";
+import Thomas from "../../assets/images/Introduce/Thomas.png";
 const IntroduceSection = () => {
   const [expandingDiscription, setExpandingDiscription] = useState(false);
   return (
