@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react'
-import { useState, useEffect, useRef } from 'react'
+import { useState} from 'react'
 import { listLiELements } from '../../contants'
 import { AnimatePresence, motion } from 'framer-motion'
 const Navigation = () => {

@@ -1,6 +1,5 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import { useState } from 'react'
-import Thomas from '../../assets/images/Introduce/Thomas.png'
 
 type InTroduceSectionProps = {
 	rank: string
