@@ -15,9 +15,9 @@ const IntergateSection = ({
   number,
 }: IntergateSectionProps) => {
   return (
-    <div className={`${name=== "CREATIVE" ? "border-y-[1px] border-gray-800" : ""} lg:py-6`}>
+    <div className={`${name=== "CREATIVE" ? "border-y-[1px] border-gray-800" : ""} sm:py-6 lg:py-6`}>
       <ButtonNavSection title={name} />
-      <div className="flex flex-col lg:flex-col xl:flex-row justify-between items-center">
+      <div className="flex flex-col items-center justify-between lg:flex-col xl:flex-row">
         <div className="p-[30px] xl:p-[60px]">
           <img
             className="h-[100px] lg:h-[200px] lg:w-[200px] object-cover"
@@ -25,7 +25,7 @@ const IntergateSection = ({
             alt={title}
           />
         </div>
-        <div className="relative text-white max-w-[600px]">
+        <div className="relative text-white xl:max-w-[600px]">
           <p className="absolute top-[6px] text-sm">{number}</p>
           <h3 className="text-lg lg:text-3xl indent-6 lg:indent-12">{description}</h3>
         </div>

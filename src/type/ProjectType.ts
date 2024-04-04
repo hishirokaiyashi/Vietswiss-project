@@ -1,4 +1,5 @@
 export type ProjectElement = {
+    key: number;
     image: string;
     title:string;
     subTitle:string;

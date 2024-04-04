@@ -10,6 +10,9 @@ export default {
         'hero-pattern': "url('/src/assets/images/HeroSection/Hero.jpg')",
         
       },
+      colors: {
+        'brand-green': '#00856F',
+      },
     },
     
     maxWidth: {
