@@ -7,8 +7,6 @@ const ProjectSection = () => {
 	const firstSixElements = projectELements.slice(0, 3)
 	const secondSixElements = projectELements.slice(3, 6)
 	const handleHoverImage = (
-		// @ts-ignore
-		event: React.MouseEvent<HTMLDivElement, MouseEvent>,
 		data: number
 	) => {
 		setIsHovered(data)
@@ -23,7 +21,7 @@ const ProjectSection = () => {
 							<div
 								className='relative flex flex-col gap-8 transition-opacity duration-300 opacity-35 hover:opacity-100'
 								key={index}
-								onMouseOver={(event) => handleHoverImage(event, el.key)}
+								onMouseOver={() => handleHoverImage( el.key)}
 								onMouseLeave={() => setIsHovered(undefined)}
 							>
 								<img
@@ -54,7 +52,7 @@ const ProjectSection = () => {
 							<div
 								className='relative flex flex-col gap-8 transition-opacity duration-300 group opacity-35 hover:opacity-100'
 								key={index}
-								onMouseOver={(event) => handleHoverImage(event, el.key)}
+								onMouseOver={() => handleHoverImage( el.key)}
 								onMouseLeave={() => setIsHovered(undefined)}
 							>
 								<img
